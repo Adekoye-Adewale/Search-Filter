@@ -1,16 +1,16 @@
 function myFunction() {
-    var input, filter, div, p, a, i, txtValue;
+    var input, filter, div, div1, a, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
     div = document.getElementById("myUL");
-    p = div.getElementsByTagName("p");
+    div1 = div.getElementsById("wrapper");
     for (i = 0; i < p.length; i++) {
-        a = p[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
+        a = div1[i].getElementsById("name")[0];
+        txtValue = a.textContent || a.Id;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            p[i].style.display = "";
+            div1[i].style.display = "";
         } else {
-            p[i].style.display = "none";
+            div1[i].style.display = "none";
         }
     }
 }

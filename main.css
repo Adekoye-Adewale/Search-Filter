@@ -39,3 +39,50 @@ header {
 }
   
 
+#wrapper {
+    width: 300px;
+    overflow: hidden;
+    height: 250px;
+    background-color: rgb(237, 237, 237);
+    border: solid 1px #dfdfdf;
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.89, 0.06, 0, 0.88) 500ms;
+}
+
+.main-img {
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.main-img>img {
+    position: relative;
+    object-fit: cover;
+    width: 300px;
+    z-index: 1;
+}
+
+#wrapper:hover .main-img>img {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+#wrapper:hover .profile {
+    z-index: 2;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: -25px;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    border: solid 1px #ffffff;
+    margin: 10px;
+}
