@@ -8,9 +8,8 @@ body {
     font: 300;
     font-size: 18px;
     line-height: 1.4em;
-    font-size: 18px 8vw 16px;
+    font-size: 18px 1.4vw 16px;
     overscroll-behavior: smooth;
-    transition: all 500ms ease-in-out 100ms;
 }
 
 header {
@@ -94,11 +93,13 @@ header {
 
 section {
     background-color: #afafaf;
+    margin: 0px auto;
+    width: 1300px;
 }
 
 .s1 {
     height: 50vw;
-    background: linear-gradient(rgba(0, 0, 0, 0.813), rgba(0, 0, 0, 0.878)),
+    background: linear-gradient(rgba(0, 0, 0, 0.602), rgba(0, 0, 0, 0.4)),
                 url(https://images.pexels.com/photos/2049422/pexels-photo-2049422.jpeg)
                 no-repeat scroll center;
     background-size: cover;
@@ -120,6 +121,7 @@ section {
 } */
 
 .s1 h1 {
+    font-family: Poppins;
     font-size: 80px;
     font-weight: 900;
     line-height: 1.4rem;
@@ -129,18 +131,6 @@ section {
 .s1>p {
     font-size: 22px;
     color: #a3a3a3;
-}
-
-.s1 > button {
-    margin: auto;
-    cursor: pointer;
-    padding: 15px 35px;
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .SearchBar_form {
@@ -213,18 +203,17 @@ button, input, optgroup, select, textarea {
 }
 
 .s2 {
-    width: 1300px;
     padding: 80px 0px;
     background-color: gold;
     display: grid;
     place-content: center;
-    margin: 0px auto;
 }
 
 .s2 .card-container {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 30px;
+    flex-shrink: 1;
 }
 
 .cards {
@@ -270,6 +259,49 @@ button, input, optgroup, select, textarea {
 }
 
 .s3 {
-    width: 1300px;
-    height: 50vh;
+    height: fit-content;
+    overflow-y: hidden;  
 }
+
+.s3-container {
+    display: grid;
+    grid-template-columns: 650px 650px;
+}
+
+.s3-content {
+    padding-right: 50px;
+    padding-top: 50px;
+    
+}
+
+.s3-content > h3 {
+    font-family: Poppins;
+    font-size: 50px;
+    margin: 0px;
+
+}
+
+.s3-content > button {
+    margin: auto;
+    cursor: pointer;
+    padding: 15px 35px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.s3-image, .s3-image>img {
+    width: 650px;
+    height: 430px;
+
+}
+
+.s4 {
+    height: 50vh;
+    padding: 80px 0px;
+    background-color: purple;
+}
+
