@@ -100,12 +100,13 @@ section {
 .s1 {
     height: 50vw;
     background: linear-gradient(rgba(0, 0, 0, 0.602), rgba(0, 0, 0, 0.4)),
-                url(https://images.pexels.com/photos/2049422/pexels-photo-2049422.jpeg)
+                url(./image/image1.jpg)
                 no-repeat scroll center;
     background-size: cover;
     text-align: center;
     display: grid;
     place-content: center;
+    margin-top: -20px;
 }
 
 /* .s1::before{
