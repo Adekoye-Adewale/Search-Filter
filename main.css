@@ -1,0 +1,41 @@
+* {
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+  
+#myInput {
+    background-image: url('');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 750px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+}
+
+.menu-list {
+    font-weight: 600 !important;
+    list-style: none;
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-icons {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+  
+
